@@ -20,19 +20,24 @@ web server or our Docker image.
 ## Docker based Setup
 
 Clone the content of the repository:
+
 ```git clone https://github.com/cau-se/oceandsl-interview-graph.git```
 
 Change to the `oceandsl-interview-graph` directory.
+
 ```cd oceandsl-interview-graph```
 
 Build the docker image with the name `ta-oceandsl` (of course you
 can choose another name):
+
 ```docker build -t ta-oceandsl .```
 
 Run docker image (make sure to use the same name here):
+
 ```docker run -dit --name my-running-app -p 8080:80 ta-oceandsl```
 
 Access the thematic map in the browser with:
+
 http://localhost:8080/graph.html
 
 ## Using existing Web Server Setup
