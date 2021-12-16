@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#mynetwork {
+				width: 100%;
+				height: 1000px;
+				border: 1px solid lightgray;
+			}
+		</style>		
+		<script type="text/javascript" src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
+	</head>
+
+	<body>
+		<script type="module" src="./visjs_se.js"></script>
+		<input type="textfield" id="searchString"/> <button id="searchButton">Suchen</button>
+		<script type="module">
+  			import {search} from './visjs_se.js'
+  			document.querySelector('#searchButton').addEventListener('click', search)
+		</script>
+		<p id="demo"></p>
+		<div id="mynetwork"></div>
+	</body>
+</html>
